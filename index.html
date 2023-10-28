@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IL LAGO DEI CIGNI SUS</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background: url('https://cdn.discordapp.com/attachments/1137505897741033526/1167959776148324352/cignazzo.jpg?ex=6550064e&is=653d914e&hm=0ffd26dc049d09680eaf518e48f14a97f4441b70429fc1b2e94fa5494ed1ef94&') no-repeat center center fixed;
+      background-size: cover;
+    }
+    h1 {
+      text-align: center;
+      color: #fff;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Immagine di Sfondo e Riproduzione Audio</h1>
+  <button onclick="playAudio('1.mp3')">MAC MATTEO</button>
+  <button onclick="playAudio('2.mp3')">MAC SCHIACCIATA CROCCANTE</button>
+  <button onclick="playAudio('3.mp3')">MAC NON PUO ENTRARE</button>
+  <button onclick="playAudio('4.mp3')">MAC TRAPEZIO</button>
+  <button onclick="playAudio('5.mp3')">MAC CIGNO + TRAPEZIO</button>
+  <button onclick="playAudio('6.mp3')">PORCA LA MERDA (BURGER)</button>
+
+  <audio id="audioPlayer" controls style="display: none;"></audio>
+
+  <script>
+    var audio = document.getElementById('audioPlayer');
+    var currentAudioSource = '';
+
+    function playAudio(audioFileName) {
+      if (currentAudioSource !== audioFileName) {
+        audio.pause();
+        audio.src = audioFileName;
+        audio.play();
+        currentAudioSource = audioFileName;
+      }
+    }
+  </script>
+</body>
+</html>
