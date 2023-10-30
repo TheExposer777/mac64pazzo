@@ -7,7 +7,7 @@
       margin: 0;
       padding: 0;
       overflow: hidden;
-      background: url('https://cdn.discordapp.com/attachments/1137505897741033526/1167959776148324352/cignazzo.jpg?ex=6550064e&is=653d914e&hm=0ffd26dc049d09680eaf518e48f14a97f4441b70429fc1b2e94fa5494ed1ef94&') no-repeat center center fixed;
+      background: url('https://cdn.discordapp.com/attachments/1138457004352995360/1168624074101096611/Progetto_senza_titolo_2.png?ex=655270fb&is=653ffbfb&hm=3a5495d2cb97e66b534be9af21dbaec5dd10376c037f9c0fcdd471352f4f47c0&') no-repeat center center fixed;
       background-size: cover;
     }
     h1 {
@@ -15,16 +15,73 @@
       color: #fff;
       padding: 20px;
     }
+    .button-container {
+      text-align: center;
+      margin: 20px;
+    }
+    .button-container .button-wrapper {
+      display: inline-block;
+      margin: 5px;
+      text-align: center;
+      background: url('https://play-lh.googleusercontent.com/v_5LsSgLe8lMcmmKc1uYMPkaOkM3JVVkl_IvQ8m9iim5Z8Pw80MgvMyA_zc2QvVs6zA=w240-h480-rw') no-repeat center center;
+      background-size: cover;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      position: relative;
+    }
+    .button-wrapper img {
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+    }
+    .button-label {
+      color: #fff;
+      font-size: 14px;
+    }
+    .button-container .spacer {
+      display: block;
+      height: 100px; /* Aggiunge uno spazio di 100px tra i gruppi di pulsanti */
+    }
   </style>
 </head>
 <body>
-  <h1>Immagine di Sfondo e Riproduzione Audio</h1>
-  <button onclick="playAudio('1.mp3')">MAC MATTEO</button>
-  <button onclick="playAudio('2.mp3')">MAC SCHIACCIATA CROCCANTE</button>
-  <button onclick="playAudio('3.mp3')">MAC NON PUO ENTRARE</button>
-  <button onclick="playAudio('4.mp3')">MAC TRAPEZIO</button>
-  <button onclick="playAudio('5.mp3')">MAC CIGNO + TRAPEZIO</button>
-  <button onclick="playAudio('6.mp3')">PORCA LA MERDA (BURGER)</button>
+  <h1>🏋️‍♂️IL MAC🏋️‍♂️</h1>
+  <div class="button-container">
+    <div class="button-wrapper" onclick="playAudio('1.mp3')">
+      <img src="https://play-lh.googleusercontent.com/v_5LsSgLe8lMcmmKc1uYMPkaOkM3JVVkl_IvQ8m9iim5Z8Pw80MgvMyA_zc2QvVs6zA=w240-h480-rw" alt="Immagine 1">
+      <div class="button-label">MAC MATTEO</div>
+    </div>
+    <div class="button-wrapper" onclick="playAudio('2.mp3')">
+      <img src="URL_IMMAGINE_2" alt="Immagine 2">
+      <div class="button-label">MAC PIZZA</div>
+    </div>
+    <div class="button-wrapper" onclick="playAudio('3.mp3')">
+      <img src="URL_IMMAGINE_3" alt="Immagine 3">
+      <div class="button-label">MAC ENTRA</div>
+    </div>
+    <div class="button-wrapper" onclick="playAudio('4.mp3')">
+      <img src="URL_IMMAGINE_4" alt="Immagine 4">
+      <div class="button-label">MAC TRAPEZ</div>
+    </div>
+    <div class="button-wrapper" onclick="playAudio('5.mp3')">
+      <img src="URL_IMMAGINE_5" alt="Immagine 5">
+      <div class="button-label">MAC CIGNO</div>
+    </div>
+<div class="spacer" style="height: 5px;"></div>
+    <div class="button-wrapper" onclick="playAudio('6.mp3')">
+      <img src="URL_IMMAGINE_7" alt="Immagine 7">
+      <div class="button-label">MAC PAZZO</div>
+    </div>
+    <div class="button-wrapper" onclick="playAudio('7.mp3')">
+      <img src="URL_IMMAGINE_8" alt="Immagine 8">
+      <div class="button-label">MAC CANTA</div>
+    </div>
+    <div class="button-wrapper" onclick="playAudio('8.mp3')">
+      <img src="URL_IMMAGINE_9" alt="Immagine 9">
+      <div class="button-label">MAC LOVUOI</div>
+    </div>
+  </div>
 
   <audio id="audioPlayer" controls style="display: none;"></audio>
 
